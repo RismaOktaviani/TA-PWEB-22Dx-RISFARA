@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +13,38 @@
     <link rel="stylesheet" href="css/all.min.css"> 
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
-    
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        .founders {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+    </style>
   
 </head>
 <body>    
-    <!--  -->
-    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.jpg">
-        <nav id="tm-nav" class="fixed w-full">
+    <!-- bar -->
             <div class="tm-container mx-auto px-2 md:py-6 text-right">
                 <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
                 <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
@@ -27,9 +54,17 @@
                   
                 </ul>
             </div>            
-        </nav>
-        </div>        
-    </div>
-    
+            
+    <!-- header untuk about us nya -->
+    <header>
+        <h1>About Us - Rumah Kebun 99</h1>
+    </header>
+    <section id="how-we-were-founded">
+        <h2>Rumah Kebun 99 dahulunya yaitu kebun yang di tanami tumbuhan cokelat dan kopi. Tapi, sang pemilik memutar kepala mencari pandangan baru supaya dapat menghasilkan cuan. Walhasil di bangunlah kedai kopi dengan tema unik dan berbeda dari kedai kopi lainnya..</h2>
+        <p>nananannannana.</p>
+        <div class="founders">
+            <img src="img/rmh kebun.jpg" alt="img 1">
+        </div>
+    </section>
 </body>
 </html>
