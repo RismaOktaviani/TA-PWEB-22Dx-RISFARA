@@ -9,7 +9,7 @@ https://www.tooplate.com/view/2126-antique-cafe
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #666;
+    background-color: #ffffff;
 }
 
 p a {
@@ -88,18 +88,18 @@ a.tm-bg-green:hover {
 
 input::placeholder,
 textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(214, 212, 212);
+    color: rgb(145, 140, 140);
     opacity: 1; /* Firefox */
 }
   
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(214, 212, 212);
+    color: rgb(151, 144, 144);
 }
   
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgb(214, 212, 212);
+    color: rgb(184, 184, 184);
 }
 
 #tm-nav {
