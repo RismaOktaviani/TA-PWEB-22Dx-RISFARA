@@ -125,6 +125,25 @@
 <footer>
   <p>Rumah kebun 99 @RISFARA</p>
 </footer>
+<script>
+function searchMenu() {
+  var input, filter, cards, menuItems, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  cards = document.getElementsByClassName("card");
+  for (i = 0; i < cards.length; i++) {
+    menuItems = cards[i].getElementsByClassName("menu-item");
+    for (j = 0; j < menuItems.length; j++) {
+      txtValue = menuItems[j].textContent || menuItems[j].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        menuItems[j].style.display = "";
+      } else {
+        menuItems[j].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
 
