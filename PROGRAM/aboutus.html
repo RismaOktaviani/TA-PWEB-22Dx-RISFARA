@@ -60,6 +60,55 @@
         nav ul li a:hover {
         color: #ff9900;
         }
+
+        
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 40px;
+    box-sizing: border-box;
+}
+
+.hero .content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+.hero .social-links {
+    margin-top: 20px;
+}
+
+.hero .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.hero .cv-download {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.hero .image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ff9900;
+}
      
         .founders {
             display: flex;
@@ -86,19 +135,39 @@
 
 </head>
 <body>    
-    <!-- bar -->
-            <div class="tm-container mx-auto px-2 md:py-6 text-right">
-                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
-                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
-                    <li class="inline-block mb-4 mx-4"><a href="#home" class="tm-text-gold py-1 md:py-3 px-4">Home</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About Us</a></li>
-                  
-                </ul>
-            </div>            
-            
-    <!-- header untuk about us nya -->
-  
+    <header>
+        <!-- bar -->
+        <div class="tm-container mx-auto px-2 md:py-6 text-right">
+            <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+            <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                <li class="inline-block mb-4 mx-4"><a href="#home" class="tm-text-gold py-1 md:py-3 px-4">Home</a></li>
+                <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
+                <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About Us</a></li>
+              
+            </ul>
+        </div>            
+        
+
+    </header>
+    
+    <!-- tampilan atas untuk about us nya -->
+  <main>
+        <section class="hero">
+            <div class="content">
+                <h1>Rumah <br> Kebun 99</h1>
+                <p>Rumah kebun adalah konsep rumah dengan kebun ataupun taman yang luas. Area kebun ataupun taman biasanya lebih luas daripada bangunan rumah, sehingga kegiatan berkebun dan menanam berbagai tanaman kebutuhan sehari-hari ataupun tanaman hias dapat dilakukan secara maksimal.</p>
+                <a href="#" class="btn">MAP</a>
+                <div class="social-links">
+                    <a href="#"><img src="" alt="Instagram"></a>
+                    <a href="#"><img src="" alt="Twitter"></a>
+                
+                </div>
+                <a href="#" class="cv-download">Lihat Menu</a>
+            </div>
+            <div class="image">
+                <img src="" alt="Profil rumah kebun">
+            </div>
+        </section>
 
     
     <section id="location">
