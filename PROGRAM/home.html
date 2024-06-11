@@ -1,112 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumah Kebun Kafe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #6b8e23;
-            color: white;
-            padding: 10px 20px;
-            width: 100%;
-            text-align: center;
-        }
-        nav {
-            background-color: #8fbc8f;
-            padding: 10px 20px;
-            width: 100%;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            width: 80%;
-            padding: 20px;
-        }
-        .card {
-            background-color: #f5f5f5;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.1);
-        }
-
-        .search-bar {
-            margin: 20px;
-            display: flex;
-            justify-content: center;
-        }
-        .search-bar input[type="text"] {
-            padding: 10px;
-            width: 300px;
-            margin-right: 10px;
-            border: 2px solid #8fbc8f;
-        }
-        .search-bar button {
-            padding: 10px 20px;
-            background-color: #6b8e23;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rumah Kebun 99</title>
+<style>
+  body { 
+    font-family: Arial, sans-serif; 
+    background-color: beige;
+}
+  header, footer { 
+    background: #8c704c; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    font-family:;
+}
+  .navbar { 
+    background: #5c4033; 
+    padding: 10px 0; 
+    text-align: center; 
+}
+  .navbar a { 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+}
+  .home-section, .menu-section { 
+    padding: 20px; 
+    text-align: center; 
+}
+  .card { 
+    display: inline-block; 
+    width: 45%; 
+    margin: 10px; 
+    padding: 10px; 
+    background-color: #a96220; 
+    vertical-align: top; 
+    border-radius: 20px;
+}
+  .card img { 
+    width: 100px; 
+    height: 100px; 
+    padding: 10px;
+    border-radius: 20px;
+}
+  .menu-item { 
+    display: flex; 
+    align-items: center; 
+}
+  .menu-item img { 
+    margin-right: 10px; 
+    
+}
+  .search-bar { 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+  input[type="text"] { 
+    padding: 7px; 
+    width: 300px; 
+    margin-right: 10px; 
+}
+  input[type="submit"] { 
+    padding: 7px; 
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Rumah Kebun Kafe</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="search-bar">
-        <input type="text" placeholder="Cari Menu...">
-        <button type="button">Cari</button>
+<header>
+  <h1>Selamat Datang di Rumah kebun</h1>
+</header>
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="about">About Us</a>
+  <a href="contact">Contact</a>
+</nav>
+<div class="home-section" id="home">
+  <h2>Rumah kebun 99</h2>
+  <p>Kopi Teman Bercerita</p>
+</div>
+<div class="menu-section" id="menu">
+  <h2>Daftar menu</h2>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search menu...">
+    <input type="submit" onclick="searchMenu()" value="Search">
+  </div>
+  <div class="card">
+    <h3 >Makanan</h3>
+    <div class="menu-item">
+      <img src="img/Banana Crispy.jpg" alt="Sandwich">
+      <div>
+        <h4>Makanan 1</h4>
+        <p>Rp. 20</p>
+      </div>
     </div>
-    <div class="menu-grid">
-        <div class="card">
-            <h3>Espresso</h3>
-            <p>Rp20.000</p>
-        </div>
-        <div class="card">
-            <h3>Cappuccino</h3>
-            <p>Rp25.000</p>
-        </div>
-        <div class="card">
-            <h3>Latte</h3>
-            <p>Rp25.000</p>
-        </div>
-        <div class="card">
-            <h3>Matcha Latte</h3>
-            <p>Rp30.000</p>
-        </div>
+    <div class="menu-item">
+      <img src="img/makanan 12rb.jpeg" alt="Salad">
+      <div>
+        <h4>Makanan2</h4>
+        <p>Rp.30</p>
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2023 Ruma Kebun Kafe. Semua hak cipta dilindungi.</p>
-    </footer>
+  </div>
+  <div class="card">
+    <h3>Minuman</h3>
+    <div class="menu-item">
+      <img src="img/taro-fotor-2024010418441.jpg" alt="Coffee">
+      <div>
+        <h4>Taro</h4>
+        <p>Rp. 15</p>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="img/squash strawberry..jpg" alt="Tea">
+      <div>
+        <h4>Tea</h4>
+        <p>Rp. 20</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>Rumah kebun 99 @RISFARA</p>
+</footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
